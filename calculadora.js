@@ -3,6 +3,8 @@ const ask = require('readline-sync')
 let sustentaMenu = true
 
 while (sustentaMenu) {
+    console.clear()
+
     console.log(`
     [1] - calcular
     [2] - sair
@@ -12,6 +14,7 @@ while (sustentaMenu) {
 
     switch (opcaoEscolhida) {
         case 1:
+            console.clear()
             console.log(`
      [1] - adicao
      [2] - subtracao
@@ -27,6 +30,7 @@ while (sustentaMenu) {
             let n1 = Number(ask.question("Digite o primeiro numero   "))
             let n2 = Number(ask.question("Digite o segundo numero    "))
             let resultado
+            console.clear()
 
             switch (operacaoDesejada) {
 
@@ -64,6 +68,7 @@ while (sustentaMenu) {
                     console.log("Opção invalida")
                     break
             }
+            ask.question("Tecle ENTER para continuar...")
             break
 
         case 2:
